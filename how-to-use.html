@@ -119,6 +119,34 @@
             </table>
         </li>
         <li>Select the <strong>currency</strong> (USD, EUR, GBP, ILS, or RUB).</li>
+        <li>
+            <strong>Choose who this plan applies to:</strong>
+            <table>
+                <tr>
+                    <th>Option</th>
+                    <th>Description</th>
+                    <th>Available on</th>
+                </tr>
+                <tr>
+                    <td>All reps on this board</td>
+                    <td>Commission is calculated for every rep on the board (default)</td>
+                    <td>All plans</td>
+                </tr>
+                <tr>
+                    <td>Specific reps</td>
+                    <td>Select individual team members — only their deals count</td>
+                    <td><span class="badge starter">Starter</span></td>
+                </tr>
+                <tr>
+                    <td>Deals matching condition</td>
+                    <td>Filter by column value (e.g., Deal Type = "Enterprise")</td>
+                    <td><span class="badge pro">Pro</span></td>
+                </tr>
+            </table>
+            <div class="note">
+                <strong>Priority:</strong> If multiple plans exist on the same board, more specific plans take priority. Deals matched by a "condition" or "specific reps" plan will not be double-counted by an "all reps" plan.
+            </div>
+        </li>
         <li>Click <strong>Save</strong>. Commissions will be calculated automatically.</li>
     </ol>
     <div class="note">
@@ -326,7 +354,7 @@
     <p>Commissions are recalculated each time you open the Board View or refresh the page. Changes to deal values, statuses, or rep assignments are reflected immediately.</p>
 
     <h3>Can I have multiple commission plans on the same board?</h3>
-    <p>Yes. You can create multiple plans and switch between them. Only one plan is active at a time per board view, but you can compare results by switching plans.</p>
+    <p>Yes (Starter and above). You can create multiple plans on the same board and assign each to specific reps or filter by a column condition. The app uses a priority system to avoid double-counting: deals matched by a "condition" or "specific reps" plan won't be counted again by an "all reps" plan.</p>
 
     <h3>What currencies are supported?</h3>
     <p>USD, EUR, GBP, ILS, and RUB. Currency is set per plan and affects display formatting only — the app uses the raw number values from your board columns.</p>
