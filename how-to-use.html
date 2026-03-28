@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use — Commission Tracker</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+        h1 { color: #0073ea; }
+        h2 { color: #0073ea; margin-top: 40px; border-bottom: 2px solid #e6e9ef; padding-bottom: 8px; }
+        h3 { color: #555; margin-top: 24px; }
+        .updated { color: #888; font-size: 14px; }
+        .subtitle { font-size: 18px; color: #555; margin-top: -10px; }
+        a { color: #0073ea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background: #f0f3f8; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { border: 1px solid #e6e9ef; padding: 10px 14px; text-align: left; }
+        th { background: #f0f3f8; color: #333; font-weight: 600; }
+        tr:nth-child(even) { background: #fafbfc; }
+        .toc { background: #f7f9fc; border: 1px solid #e6e9ef; border-radius: 8px; padding: 20px 28px; margin: 24px 0; }
+        .toc h2 { border: none; margin-top: 0; padding-bottom: 0; font-size: 18px; }
+        .toc ol { margin: 10px 0 0 0; padding-left: 20px; }
+        .toc li { margin: 6px 0; }
+        .badge { display: inline-block; background: #0073ea; color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; vertical-align: middle; margin-left: 6px; }
+        .badge.starter { background: #579bfc; }
+        .badge.pro { background: #7e5cf5; }
+        .badge.free { background: #999; }
+        .step-list li { margin: 8px 0; }
+        .note { background: #fff8e6; border-left: 4px solid #ffcb00; padding: 12px 16px; margin: 16px 0; border-radius: 0 4px 4px 0; }
+        .tip { background: #e6f4ff; border-left: 4px solid #0073ea; padding: 12px 16px; margin: 16px 0; border-radius: 0 4px 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>Commission Tracker</h1>
+    <p class="subtitle">User Guide for the Monday.com Marketplace App</p>
+    <p class="updated">Last updated: March 28, 2026</p>
+
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#getting-started">Getting Started — Creating Your First Plan</a></li>
+            <li><a href="#commission-types">Commission Types</a></li>
+            <li><a href="#board-view">Board View — Commission Tracker View</a></li>
+            <li><a href="#dashboard-widget">Dashboard Widget — Commission Dashboard</a></li>
+            <li><a href="#item-view">Item View — Commission Calculator</a></li>
+            <li><a href="#split-commissions">Split Commissions</a></li>
+            <li><a href="#csv-export">CSV Export</a></li>
+            <li><a href="#column-mapping">Supported Column Types</a></li>
+            <li><a href="#pricing">Plans and Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#support">Support</a></li>
+        </ol>
+    </div>
+
+    <!-- ============================== -->
+    <h2 id="overview">1. Overview</h2>
+    <p>Commission Tracker is a Monday.com marketplace app that automatically calculates sales commissions based on your board data. It works with any board that contains deal/sales information — not just CRM boards. You map your columns once, and the app handles the rest.</p>
+    <p>The app provides four integrated features:</p>
+    <ul>
+        <li><strong>Board View</strong> — the main hub for creating commission plans and viewing calculated commissions in a table.</li>
+        <li><strong>Dashboard Widget</strong> — KPI cards and per-rep performance overview.</li>
+        <li><strong>Item View</strong> — a "what if" calculator that shows how much commission a deal is worth.</li>
+        <li><strong>CSV Export</strong> — download summary or detailed commission reports.</li>
+    </ul>
+
+    <!-- ============================== -->
+    <h2 id="installation">2. Installation</h2>
+    <ol class="step-list">
+        <li>Go to the <strong>Monday.com Marketplace</strong> and search for <strong>Commission Tracker</strong>.</li>
+        <li>Click <strong>Install</strong> and follow the prompts to add it to your account.</li>
+        <li>Open any board that contains your deals or sales data.</li>
+        <li>Add the <strong>Board View</strong>: click the <strong>"+"</strong> button on the views panel, then select <strong>"Commission Tracker View"</strong>.</li>
+        <li>Add the <strong>Dashboard Widget</strong>: go to any Dashboard, click <strong>Add Widget</strong>, and select <strong>"Commission Dashboard"</strong>.</li>
+        <li>Add the <strong>Item View</strong>: click on any item, then click <strong>Add View</strong> and select <strong>"Commission Calculator"</strong>.</li>
+    </ol>
+    <div class="tip">
+        <strong>Tip:</strong> You only need to add each view once per board or dashboard. After that, it will appear in your views panel automatically.
+    </div>
+
+    <!-- ============================== -->
+    <h2 id="getting-started">3. Getting Started — Creating Your First Plan</h2>
+    <p>After adding the Board View, follow these steps to set up your first commission plan:</p>
+    <ol class="step-list">
+        <li>Click <strong>"New Plan"</strong> to create a commission plan.</li>
+        <li>Enter a <strong>plan name</strong> (e.g., "Q1 2026 Sales Plan").</li>
+        <li>Select the <strong>plan type</strong>: Percentage, Fixed Amount, or Tiered.</li>
+        <li>Set the <strong>rate, amount, or tier ranges</strong> depending on the plan type.</li>
+        <li>
+            <strong>Map your board columns:</strong>
+            <table>
+                <tr>
+                    <th>Mapping</th>
+                    <th>Description</th>
+                    <th>Required</th>
+                </tr>
+                <tr>
+                    <td>Deal Value</td>
+                    <td>Numbers column containing deal amounts</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Deal Status</td>
+                    <td>Status column — select which label means "closed/won"</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Sales Rep</td>
+                    <td>People column with the assigned salesperson</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Close Date</td>
+                    <td>Date column for filtering by time period</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </li>
+        <li>Select the <strong>currency</strong> (USD, EUR, GBP, ILS, or RUB).</li>
+        <li>Click <strong>Save</strong>. Commissions will be calculated automatically.</li>
+    </ol>
+    <div class="note">
+        <strong>Note:</strong> The app works with any board, not just Monday CRM. As long as your board has the required columns (deal value, status, and sales rep), you can calculate commissions on it.
+    </div>
+
+    <!-- ============================== -->
+    <h2 id="commission-types">4. Commission Types</h2>
+
+    <h3>Percentage</h3>
+    <p>A flat percentage of the deal value is paid as commission.</p>
+    <p><strong>Example:</strong> 10% rate on a $25,000 deal = <strong>$2,500</strong> commission.</p>
+
+    <h3>Fixed Amount</h3>
+    <p>A fixed dollar amount is paid for each closed deal, regardless of the deal size.</p>
+    <p><strong>Example:</strong> $500 per deal. Close 8 deals = <strong>$4,000</strong> commission.</p>
+
+    <h3>Tiered <span class="badge pro">Pro</span></h3>
+    <p>Different commission rates apply based on deal value ranges. Higher-value deals earn higher rates, incentivizing reps to close bigger deals.</p>
+    <p><strong>Example:</strong></p>
+    <table>
+        <tr>
+            <th>Deal Value Range</th>
+            <th>Rate</th>
+        </tr>
+        <tr>
+            <td>Up to $50,000</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>$50,001 — $100,000</td>
+            <td>8%</td>
+        </tr>
+        <tr>
+            <td>Above $100,000</td>
+            <td>12%</td>
+        </tr>
+    </table>
+    <p>A $120,000 deal would earn: ($50,000 x 5%) + ($50,000 x 8%) + ($20,000 x 12%) = $2,500 + $4,000 + $2,400 = <strong>$8,900</strong>.</p>
+
+    <!-- ============================== -->
+    <h2 id="board-view">5. Board View — Commission Tracker View</h2>
+    <p>The Board View is the main hub of Commission Tracker. It shows a commission table with all closed deals and their calculated commissions based on the active plan.</p>
+    <p>From the Board View you can:</p>
+    <ul>
+        <li>Create and manage multiple commission plans.</li>
+        <li>Switch between plans to compare different commission structures.</li>
+        <li>View per-deal commission amounts in a table format.</li>
+        <li>See totals per sales rep.</li>
+        <li>Set up split commissions on individual deals.</li>
+        <li>Export data to CSV.</li>
+    </ul>
+
+    <!-- ============================== -->
+    <h2 id="dashboard-widget">6. Dashboard Widget — Commission Dashboard</h2>
+    <p>The Dashboard Widget provides a high-level overview of commission performance. Add it to any monday.com dashboard to see:</p>
+    <ul>
+        <li><strong>KPI Cards</strong> — total commissions paid, number of closed deals, average deal size, and top performer.</li>
+        <li><strong>Per-Rep Performance Table</strong> — each sales rep's total deals, total deal value, and total commission earned.</li>
+    </ul>
+    <div class="tip">
+        <strong>Tip:</strong> The Dashboard Widget pulls data from the same commission plan configured in the Board View. Make sure you have at least one active plan set up first.
+    </div>
+
+    <!-- ============================== -->
+    <h2 id="item-view">7. Item View — Commission Calculator</h2>
+    <p>The Item View is a "what if" calculator that appears when you open an individual deal. It answers the question: <strong>"How much commission will I earn if I close this deal?"</strong></p>
+    <p>The calculator shows:</p>
+    <ul>
+        <li>The deal value from the mapped column.</li>
+        <li>The commission amount based on the active plan.</li>
+        <li>For tiered plans: a visual breakdown of which tiers apply and the rep's progress through the tier structure.</li>
+    </ul>
+
+    <!-- ============================== -->
+    <h2 id="split-commissions">8. Split Commissions <span class="badge starter">Starter+</span></h2>
+    <p>Split commissions allow you to divide a deal's commission between multiple team members. This is useful when multiple reps collaborate on a sale.</p>
+    <ol class="step-list">
+        <li>In the Board View, find the deal row you want to split.</li>
+        <li>Click the <strong>split icon</strong> on that row.</li>
+        <li>Add team members and set the <strong>split percentage</strong> for each person.</li>
+        <li>Save the split. Each person will see their share reflected in the commission table.</li>
+    </ol>
+    <p><strong>Example:</strong> A $50,000 deal with 10% commission ($5,000 total). Split 60/40 between two reps: Rep A earns $3,000, Rep B earns $2,000.</p>
+
+    <!-- ============================== -->
+    <h2 id="csv-export">9. CSV Export <span class="badge starter">Starter+</span></h2>
+    <p>Export your commission data for use in spreadsheets, accounting software, or payroll systems.</p>
+    <ol class="step-list">
+        <li>In the Board View, click the <strong>"Export CSV"</strong> button.</li>
+        <li>Choose the report type:
+            <ul>
+                <li><strong>Summary</strong> — per-rep totals (rep name, number of deals, total deal value, total commission).</li>
+                <li><strong>Detailed</strong> — per-deal breakdown (deal name, value, status, rep, commission amount, split info).</li>
+            </ul>
+        </li>
+        <li>The CSV file will download to your computer.</li>
+    </ol>
+
+    <!-- ============================== -->
+    <h2 id="column-mapping">10. Supported Column Types</h2>
+    <p>Commission Tracker supports a wide range of Monday.com column types for maximum flexibility:</p>
+    <table>
+        <tr>
+            <th>Mapping</th>
+            <th>Supported Column Types</th>
+        </tr>
+        <tr>
+            <td>Deal Value</td>
+            <td>Numbers, Formula, Mirror/Lookup</td>
+        </tr>
+        <tr>
+            <td>Deal Status</td>
+            <td>Status, Dropdown, Text</td>
+        </tr>
+        <tr>
+            <td>Sales Rep</td>
+            <td>People, Multiple Person, Email, Text</td>
+        </tr>
+        <tr>
+            <td>Close Date</td>
+            <td>Date</td>
+        </tr>
+    </table>
+
+    <!-- ============================== -->
+    <h2 id="pricing">11. Plans and Pricing</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Free <span class="badge free">$0</span></th>
+            <th>Starter <span class="badge starter">$10/seat/mo</span></th>
+            <th>Pro <span class="badge pro">$29/seat/mo</span></th>
+        </tr>
+        <tr>
+            <td>Commission Plans</td>
+            <td>1</td>
+            <td>5</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Sales Reps</td>
+            <td>3</td>
+            <td>15</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Commission Types</td>
+            <td>Percentage, Fixed</td>
+            <td>Percentage, Fixed</td>
+            <td>Percentage, Fixed, Tiered</td>
+        </tr>
+        <tr>
+            <td>Board View</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Item View Calculator</td>
+            <td>Basic</td>
+            <td>Full</td>
+            <td>Full + Tier Progress</td>
+        </tr>
+        <tr>
+            <td>Dashboard Widget</td>
+            <td>--</td>
+            <td>--</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>CSV Export</td>
+            <td>--</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Split Commissions</td>
+            <td>--</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>API Access</td>
+            <td>--</td>
+            <td>--</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Priority Support</td>
+            <td>--</td>
+            <td>--</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    <p>Pricing is per seat, per month. Only users who are assigned as sales reps in commission plans count as seats.</p>
+
+    <!-- ============================== -->
+    <h2 id="faq">12. FAQ</h2>
+
+    <h3>Does the app work with any board?</h3>
+    <p>Yes. Commission Tracker works with any Monday.com board, not just CRM boards. As long as your board has columns for deal value, status, and sales rep, you can calculate commissions on it.</p>
+
+    <h3>Are commissions calculated in real time?</h3>
+    <p>Commissions are recalculated each time you open the Board View or refresh the page. Changes to deal values, statuses, or rep assignments are reflected immediately.</p>
+
+    <h3>Can I have multiple commission plans on the same board?</h3>
+    <p>Yes. You can create multiple plans and switch between them. Only one plan is active at a time per board view, but you can compare results by switching plans.</p>
+
+    <h3>What currencies are supported?</h3>
+    <p>USD, EUR, GBP, ILS, and RUB. Currency is set per plan and affects display formatting only — the app uses the raw number values from your board columns.</p>
+
+    <h3>What happens if I uninstall the app?</h3>
+    <p>All commission plan configurations and split settings stored by the app will be removed. Your board data is never modified or deleted by the app.</p>
+
+    <!-- ============================== -->
+    <h2 id="support">13. Support</h2>
+    <p>If you need help or have questions, contact us at: <a href="mailto:natalia.fedorova.bi@gmail.com">natalia.fedorova.bi@gmail.com</a></p>
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a>
+    </p>
+</body>
+</html>
